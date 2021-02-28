@@ -1,13 +1,12 @@
+# File: .gith
 # File: .github/workflows/repo-sync.yml
 name: sync chongshengB rt-n56u
 on:
-#  schedule:
-#    - cron: '1 0,15 * * *'
+ # schedule:
+  #  - cron: '1 * * * *'
   workflow_dispatch:
   watch:
     types: started
-  push:
-    branches: [ master ]
   repository_dispatch:
     types: sync chongshengB rt-n56u
 jobs:
